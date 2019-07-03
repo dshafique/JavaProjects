@@ -1,0 +1,94 @@
+/************************************************************************
+* Name: Daoud Shafique                                          CSC 156
+* Date: 04/03/2016                                              Lab 5   
+*************************************************************************
+* Statement: Access content pane to create a visible window
+* Specifications:JFrame prameters to determine window
+* Input  - none
+* 
+* Output - displayed window with 300x400 pixels
+* output - JLabels to identfy JTextField I/O opportunities                       
+************************************************************************/
+// demonstrates use of swing class methods to access content pane
+// declare swing class
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+
+public class PropertyTax5 extends JFrame
+{
+    // set parameters to define extent of the window
+    private static final int WIDTH = 500, HEIGHT = 300;
+    public PropertyTax5()
+    {
+	ExitHandler ebhandler = new ExitHander();
+	//CalculateHandler cbHandler = new CalculateHandler();
+
+    
+    // Step 1 = Declare and Initialize 6 JLabels
+        
+        JLabel  assessL = new JLabel ("Assesssment Home Value", SwingConstants.RIGHT);
+        JLabel SchoolTaxRate= new JLabel ( "Decimal Value of School Tax Rate", SwingConstants.RIGHT);
+        JLabel CountyTaxRate = new JLabel ( " Decimal Value of County Tax Rate", SwingConstants.RIGHT);
+        JLabel SchoolTaxes = new JLabel ("School Taxes", SwingConstants.RIGHT);
+        JLabel CountyTaxes = new JLabel ("County Taxes", SwingConstants.RIGHT);
+        JLabel TotalTaxes = new JLabel ("Total Taxes", SwingConstants.RIGHT);
+        
+       
+     //declare and initialize 6 JTextFields
+
+        JTextField assessTF = new JTextField(10);
+	JTextField SchoolTaxRateTF = new JTextField(10); 
+        JTextField CountyTaxRateTF = new JTextField(10);
+        JTextField SchoolTaxesTF = new JTextField(10);
+        JTextField CountyTaxesTF = new JTextField(10);
+        JTextField TotalTaxesTF = new JTextField(10);
+
+        //declare and initialize 2 JButtons
+        JButton exit = new JButton("Exit");
+        JButton calculate = new JButton("Calculate");
+
+        //set GUI objects in the container
+    Container pane = getContentPane();
+    pane.setLayout(new GridLayout(7,2));
+
+	pane.add(assessL);
+        pane.add(assessTF);
+        pane.add(SchoolTaxRate);
+        pane.add(SchoolTaxRateTF);
+        pane.add(CountyTaxRate);
+        pane.add(CountyTaxRateTF);
+        pane.add(SchoolTaxes);
+        pane.add(SchoolTaxesTF);
+        pane.add(CountyTaxes);
+        pane.add(CountyTaxesTF);
+        pane.add(TotalTaxes);
+        pane.add(TotalTaxesTF);
+        pane.add(calculate);
+        pane.add(exit);
+
+	// set title, size and visibility aspects of window
+	setTitle("Calculation of Property Taxes");
+	setSize(WIDTH, HEIGHT);
+	setVisible(true);
+	setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+	exit.addActionListener(ebHandler);
+	// calculate.addActionListenr(cbHandler);
+    }
+
+public class ExitHandler implements ActionListner
+{
+    public void actionPerformed(ActionEvent e)
+    {
+	System.exit(0);
+    }
+}
+
+    public static void main(String[] args)
+    {
+	// main program to invoke constructor
+	PropertyTax5 proptax = new PropertyTax5();
+    }
+
+}

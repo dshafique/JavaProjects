@@ -1,3 +1,6 @@
+import java.io.*;
+import java.util.*;
+
 class BankAccount2
 {
     private double balance;
@@ -30,7 +33,7 @@ class BankAccount2
     {
         
         Zkt = balance * 0.02;
-        System.out.println("You owe $" + Zkt + "in zakaat this year");
+        System.out.println("You owe $" + Zkt + " in zakaat this year");
     }
 
     public void sadqa(double balance)
@@ -75,8 +78,7 @@ class BankFunctions
 
 
 
-
-    }
+    };
         
     
 }

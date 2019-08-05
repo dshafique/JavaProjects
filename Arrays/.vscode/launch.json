@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - highArrayAppDS",
+            "request": "launch",
+            "mainClass": "highArrayAppDS"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LowArrayAppDS",
             "request": "launch",
             "mainClass": "LowArrayAppDS"

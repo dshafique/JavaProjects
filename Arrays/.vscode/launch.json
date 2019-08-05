@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LowArrayAppDS",
+            "request": "launch",
+            "mainClass": "LowArrayAppDS"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayDS",
+            "request": "launch",
+            "mainClass": "ArrayDS"
+        }
+    ]
+}

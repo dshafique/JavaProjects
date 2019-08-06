@@ -15,7 +15,13 @@ class ArrayBubDs
     public void insert ()
     {
         Random rand = new Random();
-        int randomNum = rand.nextInt(100);
+        int bound = 500;
+        /* Scanner myObj = new Scanner(System.in);
+        System.out.println("pick the random range: ");
+
+        bound = myObj.nextInt();
+        System.out.println("you chose: " + bound); */
+        int randomNum = rand.nextInt(bound);
         a[n] = randomNum;
         n++;
     }

@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ArrayBubDsApp",
+            "request": "launch",
+            "mainClass": "ArrayBubDsApp"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - binarySearchDSApp",
+            "request": "launch",
+            "mainClass": "binarySearchDSApp"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - classDataArrayDSApp",
             "request": "launch",
             "mainClass": "classDataArrayDSApp"

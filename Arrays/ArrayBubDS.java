@@ -48,6 +48,19 @@ class ArrayBubDs
 
     }
 
+    public void selectSort()
+    {
+        int i, j, min;
+        for (i=0;i<n-1;i++)
+        {
+            min = i;
+            for (j=i+1;j<n;j++)
+            if(a[j]<a[min])
+                min = j;
+            swap(i,min);
+        }
+    }
+
     /* public static int randomFill(){
         Random rand = new Random();
         int randomNum = rand.nextInt();
@@ -70,8 +83,8 @@ class ArrayBubDsApp
             
 
         a7.display();
-
-        a7.bubbleSort();
+        a7.selectSort();
+        //a7.bubbleSort();
 
         a7.display();
     } 

@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - reversal",
+            "request": "launch",
+            "mainClass": "reversal"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - stackDSApp",
             "request": "launch",
             "mainClass": "stackDSApp"
